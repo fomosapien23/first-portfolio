@@ -1,0 +1,129 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;   
+}
+body{
+    font-family: 'poppins',sans-serif;
+    background-image:url(abstract.jpg);
+    min-height: 100%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+}
+
+.container{
+    display: flex;
+    
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: #cae962;
+    width: 100%;
+    /* text-align: center; */
+    font-size: 20px;
+   
+    
+}
+
+nav ul{
+    
+  list-style: none;
+  justify-content:end;
+   
+}
+
+nav ul li{
+    padding: 10px 20px;
+    margin: auto;
+    display: inline-block;
+    /* height: 5px; */
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.main{
+    color: white;
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+.infocontainer{
+  
+    display: flex ;
+    margin: 144px auto;
+    /* background-color: rgb(0, 0, 0); */
+    background-color: transparent;
+    border-style: solid;
+    height: 70vh;
+    width: 80vw;
+    justify-content: space-around;
+}
+
+.devpic{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.devpic img {
+    height: 60vh;
+    border-radius: 20px;
+}
+
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hello{
+   font-size: 30px;
+}
+
+#name{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 55px;
+    color: #cae962;
+}
+
+#talk{
+    font-size: 30px;  
+}
+#btn{
+    margin-top: 30px;
+}
+
+#btn button{
+    /* color: white; */
+    margin: 5px;
+    background-color: #cae962;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+    width: 8vw;
+    height: 5vh;
+  
+}
+
+#btn button:hover{
+    border:solid;
+    border-color: white;
+    color: white;
+    background-color: #3b3b3b;
+}
+
