@@ -8,6 +8,7 @@
 }
 
 body {
+    color: white;
     font-family: 'poppins', sans-serif;
     background-color: #000;
     /* background-image: url(abstract.jpg);
@@ -23,31 +24,36 @@ body {
 }
 
 .topbar {
+    padding: 10px 20px;
     position: fixed;
     top: 0;
-    display: flex;
+    display: inline-block;
     background-color: #cae962;
     width: 100%;
     /* text-align: center; */
     font-size: 20px;
+    
 
+}
 
+nav{
+    float: right;
 }
 
 nav ul {
     list-style: none;
-    justify-content: end;
-
+    position: relative;
 }
 
 nav ul li {
-    padding: 10px 20px;
-    margin: auto;
+    
+    /* margin: auto; */
     display: inline-block;
     /* height: 5px; */
 }
 
 nav ul li a {
+    padding: 0 25px;
     text-decoration: none;
     color: black;
 }
@@ -110,7 +116,7 @@ nav ul li a {
 .wrapper .dynamicText{
     /* margin-left:30px; */
     height: 90px;
-    line-height: 50px;
+    line-height: 52px;
     /* background: rgb(200, 200, 9); */
     overflow: hidden;
 
@@ -175,7 +181,7 @@ nav ul li a {
 }
 
 #btn {
-    margin-top: 30px;
+    /* margin-top: 5px; */
 }
 
 #btn button {
