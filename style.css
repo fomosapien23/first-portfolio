@@ -1,28 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Condensed&family=Roboto+Mono&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
-
-
-
-*{
+* {
     margin: 0;
-    padding: 0;   
-}
-body{
-    font-family: 'poppins',sans-serif;
-    background-image:url(abstract.jpg);
-    min-height: 100%;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: center;
-background-size: cover;
+    padding: 0;
 }
 
-.container{
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: #000;
+    /* background-image: url(abstract.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+}
+
+.container {
     display: flex;
-    
+
 }
 
-.sidebar{
+.topbar {
     position: fixed;
     top: 0;
     display: flex;
@@ -30,49 +30,41 @@ background-size: cover;
     width: 100%;
     /* text-align: center; */
     font-size: 20px;
-   
-    
+
+
 }
 
-nav ul{
-    
-  list-style: none;
-  justify-content:end;
-   
+nav ul {
+    list-style: none;
+    justify-content: end;
+
 }
 
-nav ul li{
+nav ul li {
     padding: 10px 20px;
     margin: auto;
     display: inline-block;
     /* height: 5px; */
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: black;
 }
 
-.main{
+.infocontainer {
     color: white;
-    
-    width: 100vw;
-    height: 100vh;
-}
-
-.infocontainer{
-  
-    display: flex ;
+    box-shadow: 0 5px 25px rgba(135, 121, 121, 0.5);
+    overflow: hidden;
+    display: flex;
     margin: 144px auto;
-    /* background-color: rgb(0, 0, 0); */
-    background-color: transparent;
-    border-style: solid;
     height: 70vh;
     width: 80vw;
     justify-content: space-around;
+    border-radius: 10px;
 }
 
-.devpic{
+.devpic {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -83,47 +75,127 @@ nav ul li a{
     border-radius: 20px;
 }
 
-.devinfo{
+.devinfo {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-#hello{
-   font-size: 30px;
+#hello {
+    font-size: 30px;
 }
 
-#name{
+#name {
     font-family: 'Orbitron', sans-serif;
     font-size: 55px;
     color: #cae962;
 }
 
-#talk{
-    font-size: 30px;  
+/* #talk {
+    font-size: 30px;
+} */
+
+.wrapper{
+    margin-top: 10px;
+    display: inline-flex;
+    
 }
-#btn{
+
+.wrapper .staticText{
+    /* color: aqua; */
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.wrapper .dynamicText{
+    /* margin-left:30px; */
+    height: 90px;
+    line-height: 50px;
+    /* background: rgb(200, 200, 9); */
+    overflow: hidden;
+
+}
+
+ .dynamicText li{
+    list-style: none;
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(191, 91, 91);
+    font-size: 40px;
+    /* font-weight: 550; */
+    position: relative;
+    top: 0;
+    margin-bottom:65px ;
+    animation: slide 6s steps(3) infinite;
+}
+
+@keyframes slide{
+    100%{
+       top: -360px;
+    }
+}
+
+.dynamicText li span{
+    position: relative;
+}
+
+.dynamicText li span::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background:black;
+      border-left: 2px solid white;
+      animation: typing 2s steps(11) infinite;
+}
+
+@keyframes typing{
+    100%{
+        left:100%;
+        margin: 0 -35px 0 16px;
+    }
+}
+
+#p1{
+    color: rgb(187, 0, 255);
+    font-family: 'Roboto Condensed', sans-serif;
+    /* font-size: 40px; */
+}
+
+#p2{
+    color: #D61355;
+    font-family: 'Roboto Mono', monospace;
+    /* font-size: 40px; */
+}
+
+#p3{
+    color: #FF8882;
+    font-family: 'Dancing Script', cursive;
+    /* font-size: 40px; */
+}
+
+#btn {
     margin-top: 30px;
 }
 
-#btn button{
+#btn button {
     /* color: white; */
     margin: 5px;
     background-color: #cae962;
+    border: solid;
+    border-color: #cae962;
     font-size: 15px;
     text-align: center;
     padding: 10px;
     border-radius: 20px;
-    border: 0;
     width: 8vw;
     height: 5vh;
-  
+
 }
 
-#btn button:hover{
-    border:solid;
+#btn button:hover {
+    border: solid;
     border-color: white;
     color: white;
     background-color: #3b3b3b;
 }
-
