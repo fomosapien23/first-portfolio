@@ -60,14 +60,15 @@ nav ul li a {
 
 .infocontainer {
     color: white;
-    box-shadow: 0 5px 25px rgba(135, 121, 121, 0.5);
+    /* box-shadow: 0 5px 25px rgba(135, 121, 121, 0.5); */
     overflow: hidden;
     display: flex;
     margin: 144px auto;
     height: 70vh;
     width: 80vw;
+    text-align: center;
     justify-content: space-around;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .devpic {
@@ -93,7 +94,7 @@ nav ul li a {
 
 #name {
     font-family: 'Orbitron', sans-serif;
-    font-size: 55px;
+    font-size: 85px;
     color: #cae962;
 }
 
@@ -103,7 +104,7 @@ nav ul li a {
 
 .wrapper{
     margin-top: 10px;
-    display: inline-flex;
+    /* display: inline-flex; */
     
 }
 
@@ -204,4 +205,11 @@ nav ul li a {
     border-color: white;
     color: white;
     background-color: #3b3b3b;
+}
+
+.about_container{
+        background-image: url(abstract.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 }
