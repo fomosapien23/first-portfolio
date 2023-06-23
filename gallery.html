@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <link rel="stylesheet" href="gallery-style.css">
+    <script src="https://kit.fontawesome.com/50665909d5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="info">
+        <img src="images/larrow-removebg-preview.png" id="backbtn">
+        <!-- <i class="fa-solid fa-arrow-left-long" id="backbtn"></i> -->
+        <div class="container">
+            <div class="contain-box b1">
+                <img src="images/img1.jpg" id="m1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis amet numquam aperiam,
+                    quam deserunt porro ea, cumque excepturi ipsum quasi accusamus culpa consequuntur dolor
+                    fuga recusandae veniam sapiente ratione error!</p>
+            </div>
+            <div class="contain-box b2">
+                <img src="images/img2.jpg" id="m2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis amet numquam aperiam,
+                    quam deserunt porro ea, cumque excepturi ipsum quasi accusamus culpa consequuntur dolor
+                    fuga recusandae veniam sapiente ratione error!</p>
+            </div>
+            <div class="contain-box b3">
+                <img src="images/img6.jpg" id="m3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis amet numquam aperiam,
+                    quam deserunt porro ea, cumque excepturi ipsum quasi accusamus culpa consequuntur dolor
+                    fuga recusandae veniam sapiente ratione error!</p>
+            </div>
+            <div class="contain-box b4">
+                <img src="images/img3.jpg" id="m4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis amet numquam aperiam,
+                    quam deserunt porro ea, cumque excepturi ipsum quasi accusamus culpa consequuntur dolor
+                    fuga recusandae veniam sapiente ratione error!</p>
+            </div>
+            <div class="contain-box b5">
+                <img src="images/img4.jpg" id="m5">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis amet numquam aperiam,
+                    quam deserunt porro ea, cumque excepturi ipsum quasi accusamus culpa consequuntur dolor
+                    fuga recusandae veniam sapiente ratione error!</p>
+            </div>
+            <div class="contain-box b6">
+                <img src="images/img5.jpg" id="m6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis amet numquam aperiam,
+                    quam deserunt porro ea, cumque excepturi ipsum quasi accusamus culpa consequuntur dolor
+                    fuga recusandae veniam sapiente ratione error!</p>
+            </div>
+            <div class="contain-box b3">
+                <img src="images/img9.jpg" id="m3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis amet numquam aperiam,
+                    quam deserunt porro ea, cumque excepturi ipsum quasi accusamus culpa consequuntur dolor
+                    fuga recusandae veniam sapiente ratione error!</p>
+            </div>
+            <div class="contain-box b2">
+                <img src="images/img8.jpg" id="m2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis amet numquam aperiam,
+                    quam deserunt porro ea, cumque excepturi ipsum quasi accusamus culpa consequuntur dolor
+                    fuga recusandae veniam sapiente ratione error!</p>
+            </div>
+            <div class="contain-box b1">
+                <img src="images/img7.jpg" id="m1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis amet numquam aperiam,
+                    quam deserunt porro ea, cumque excepturi ipsum quasi accusamus culpa consequuntur dolor
+                    fuga recusandae veniam sapiente ratione error!</p>
+            </div>
+            <div class="contain-box b4">
+                <img src="images/img10.jpg" id="m4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis amet numquam aperiam,
+                    quam deserunt porro ea, cumque excepturi ipsum quasi accusamus culpa consequuntur dolor
+                    fuga recusandae veniam sapiente ratione error!</p>
+            </div>
+            <div class="contain-box b5">
+                <img src="images/img11.jpg" id="m5">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis amet numquam aperiam,
+                    quam deserunt porro ea, cumque excepturi ipsum quasi accusamus culpa consequuntur dolor
+                    fuga recusandae veniam sapiente ratione error!</p>
+            </div>
+            <div class="contain-box b6">
+                <img src="images/img12.jpg" id="m6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis amet numquam aperiam,
+                    quam deserunt porro ea, cumque excepturi ipsum quasi accusamus culpa consequuntur dolor
+                    fuga recusandae veniam sapiente ratione error!</p>
+            </div>
+            <div class="contain-box b2">
+                <img src="images/img13.jpg" id="m2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis amet numquam aperiam,
+                    quam deserunt porro ea, cumque excepturi ipsum quasi accusamus culpa consequuntur dolor
+                    fuga recusandae veniam sapiente ratione error!</p>
+            </div>
+            <div class="contain-box b3">
+                <img src="images/img14.jpg" id="m3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis amet numquam aperiam,
+                    quam deserunt porro ea, cumque excepturi ipsum quasi accusamus culpa consequuntur dolor
+                    fuga recusandae veniam sapiente ratione error!</p>
+            </div>
+            <div class="contain-box b4">
+                <img src="images/img15.jpg" id="m4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis amet numquam aperiam,
+                    quam deserunt porro ea, cumque excepturi ipsum quasi accusamus culpa consequuntur dolor
+                    fuga recusandae veniam sapiente ratione error!</p>
+            </div>
+        </div>
+        <!-- <i class="fa-solid fa-arrow-right-long" id="nextbtn"></i> -->
+        <img src="images/rarrow-removebg-preview.png" id="nextbtn">
+    </div>
+</body>
+
+<script>
+    let scrollcontainer = document.querySelector(".container");
+    let backbtn = document.getElementById("backbtn");
+    let nextbtn = document.getElementById("nextbtn");
+
+    scrollcontainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollcontainer.scrollLeft += (evt.deltaY);
+        scrollcontainer.style.scrollBehavior = "smooth";
+    })
+
+    nextbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft += 300;
+        scrollcontainer.style.scrollBehavior = "smooth";
+    })
+
+    backbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft -= 300;
+        scrollcontainer.style.scrollBehavior = "smooth";
+    })
+
+</script>
+
+</html>
