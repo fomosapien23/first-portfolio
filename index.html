@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rohan's portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
 
     <div class="topbar">
-       
-        <nav >
+        r.
+        <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About me</a></li>
-                <li><a href="edu.html">Education</a></li>
-                <li><a href="contact.html">Contact me</a></li>
+                <li><a href="#index">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#edu">Education</a></li>
+                <li><a href="#contact">Contact me</a></li>
             </ul>
         </nav>
 
     </div>
 
-    <div class="container">
+    <div class="container" id="index">
 
 
         <div class="infocontainer">
@@ -41,28 +43,161 @@
                     </div>
                 </div>
                 <!-- <span id="talk">Developer, Competitive Programmer </span> -->
-                <div id="btn">
-                    <button>CV</button>
-                    <button>About Me</button>
-                </div>
+
             </div>
-            <!-- <div class="devpic"><img src="roha.jpg" alt=""></div> -->
+            <div class="devpic"><img src="images/roha.jpg" alt=""></div>
         </div>
 
 
 
     </div>
 
-   <!-- --------------------------about section--------------------- -->
- 
+    <!-- --------------------------about section--------------------- -->
 
-   <div class="about_container">
-    <div class="about_info">
-        <h1>About me</h1>
+
+    <div class="about_container" id="about">
+        <div class="about_info">
+            <h1 class="topic">About me</h1>
+           <h2>Hello!</h2><br>
+            <p> I'm Rohan Rai from India! <br>
+                I love programming, as well as development, creative and learning new things!</p>
+        </div>
     </div>
-   </div>
 
+    <!-- -----------------------------Education------------------------------- -->
+    <div class="edu-box" id="edu">
+        <div class="topic">Education</div>
+        <div class="eduinfo">
+            <div class="edutext left-box " data-aos="fade-up-right">
+                <img src="images/nit.png">
+                <div class="content">
+                    <h2>MCA</h2>
+                    <h4>2022-25</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Itaque est saepe earum molestiae ratione sunt voluptatem
+                        assumenda soluta maxime, perspiciatis quas quibusdam, quis,
+                        voluptas molestias fuga neque natus atque corporis.</p>
+
+                </div>
+            </div>
+            <div class="edutext right-box" data-aos="fade-up-left">
+                <img src="images/davv.png">
+                <div class="content">
+                    <h2>MCA</h2>
+                    <h4>2022-25</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Itaque est saepe earum molestiae ratione sunt voluptatem
+                        assumenda soluta maxime, perspiciatis quas quibusdam, quis,
+                        voluptas molestias fuga neque natus atque corporis.</p>
+
+                </div>
+            </div>
+            <div class="edutext left-box" data-aos="fade-up-right">
+                <img src="images/OIP.jpg">
+                <div class="content">
+                    <h2>MCA</h2>
+                    <h4>2022-25</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Itaque est saepe earum molestiae ratione sunt voluptatem
+                        assumenda soluta maxime, perspiciatis quas quibusdam, quis,
+                        voluptas molestias fuga neque natus atque corporis.</p>
+
+                </div>
+            </div>
+            <div class="edutext right-box" data-aos="fade-up-left">
+                <div class="content">
+                    <h2>MCA</h2>
+                    <h4>2022-25</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Itaque est saepe earum molestiae ratione sunt voluptatem
+                        assumenda soluta maxime, perspiciatis quas quibusdam, quis,
+                        voluptas molestias fuga neque natus atque corporis.</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+    <!-- ------------------------project------------------------------------ -->
+
+    <div class="proj-box" >
+        <div class="proj-list">
+            <div class="proj-content">
+                <img src="images/p1.jpg">
+                <div class="layer">
+                    <h2>Gallery</h2>
+                    <p>some of my artwork, include some of my favourite one's</p>
+                    <a href="gallery.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="proj-content">
+                <img src="images/p2.jpg">
+                <div class="layer">
+                    <h2>Project</h2>
+                    <p>Development Projects and university projects</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="proj-content">
+                <img src="images/p3.jpg">
+                <div class="layer">
+                    <h2>Skills</h2>
+                    <p>some skills and knowlwdge</p>
+                    <a href="skills.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- -----------------------contact-------------------------- -->
+
+    <div class="contact-box" id="contact">
+        <div class="contact-info">
+            <div class="left-div">
+                <a href="mailto:rairohan2309@gmail.com"><i class="fa-solid fa-paper-plane " style="color: white;"></i><span > rairohan2309@gmail.com</span></a>
+                <a href="https://www.linkedin.com/in/rohan-rai-020b25249"><i class="fa-brands fa-linkedin" style="color: white;"></i><span > Rohan_Rai</span></a>
+            </div>
+            <div class="right-div">
+                <a href="https://github.com/spoileralert23"><i class="fa-brands fa-github" style="color: #64CCC5;"></i><span>@spoileralert23</span></a>
+                <a href="https://www.instagram.com/rohanrai23_/"><i class="fa-brands fa-instagram" style="color: #FF0060;"></i><span>rohanrai23_</span></a>
+                <a href="https://www.facebook.com/profile.php?id=100022112719814"><i class="fa-brands fa-facebook" style="color: #0079FF;"></i><span>rohan rai</span></a>
+                <a href=""> <i class="fa-brands fa-snapchat" style="color: #F6FA70;"></i><span>rai_rohan23</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------copright---------------------------- -->
+    <div class="cright">
+        <i class="fa-regular fa-copyright"></i>
+        <span>2022-23</span>
+    </div>
 
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://kit.fontawesome.com/50665909d5.js" crossorigin="anonymous"></script>
+<script>
+    AOS.init();
+</script>
+
+<script>
+  window.addEventListener('scroll', function() {
+  var navbar = document.querySelector('.topbar');
+  var scrollPosition = window.scrollY;
+
+  if (scrollPosition > 1300  ) { 
+    navbar.classList.add('sticky');
+    navbar.classList.add('sticky a');
+  } else {
+    navbar.classList.remove('sticky');
+  }
+});
+
+</script>
 
 </html>
