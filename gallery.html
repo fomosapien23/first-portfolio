@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gallery</title>
     <link rel="stylesheet" href="gallery-style.css">
+  
+
     <script src="https://kit.fontawesome.com/50665909d5.js" crossorigin="anonymous"></script>
 </head>
 
@@ -122,14 +124,48 @@
     })
 
     nextbtn.addEventListener("click", () => {
-        scrollcontainer.scrollLeft += 300;
+        scrollcontainer.scrollLeft += 500;
         scrollcontainer.style.scrollBehavior = "smooth";
     })
 
     backbtn.addEventListener("click", () => {
-        scrollcontainer.scrollLeft -= 300;
+        scrollcontainer.scrollLeft -= 500;
         scrollcontainer.style.scrollBehavior = "smooth";
     })
+
+</script>
+
+
+<script>
+    window.addEventListener('wheel', function(event) {
+  event.preventDefault(); // Prevents the default scrolling behavior
+
+  var container = document.getElementById('container');
+  var scrollAmount = event.deltaY;
+  var scrollSpeed = 10; // Adjust this value to control the smoothness
+
+  var startTime = null;
+  var startScrollLeft = container.scrollLeft;
+
+  function step(timestamp) {
+    if (!startTime) startTime = timestamp;
+    var progress = timestamp - startTime;
+    var ease = easeOutCubic(progress / scrollSpeed);
+
+    container.scrollLeft = startScrollLeft + scrollAmount * ease;
+
+    if (progress < scrollSpeed) {
+      window.requestAnimationFrame(step);
+    }
+  }
+
+  window.requestAnimationFrame(step);
+});
+
+// Easing function
+function easeOutCubic(t) {
+  return 1 - Math.pow(1 - t, 3);
+}
 
 </script>
 

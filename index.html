@@ -7,6 +7,7 @@
     <title>rohan's portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
 
 </head>
 
@@ -20,6 +21,7 @@
                 <li><a href="#about">About me</a></li>
                 <li><a href="#edu">Education</a></li>
                 <li><a href="#contact">Contact me</a></li>
+                <li><a href="#services">Services</a></li>
             </ul>
         </nav>
 
@@ -43,7 +45,9 @@
                     </div>
                 </div>
                 <!-- <span id="talk">Developer, Competitive Programmer </span> -->
-
+                <a href="resume_rohan.pdf" download="resume_rohan.pdf">
+                    <button id="cv">Download Resume</button>
+                </a>
             </div>
             <div class="devpic"><img src="images/roha.jpg" alt=""></div>
         </div>
@@ -57,10 +61,16 @@
 
     <div class="about_container" id="about">
         <div class="about_info">
-            <h1 class="topic">About me</h1>
-           <h2>Hello!</h2><br>
-            <p> I'm Rohan Rai from India! <br>
-                I love programming, as well as development, creative and learning new things!</p>
+            <div class="about-div">
+                <h1 class="heading">About me</h1>
+                <h2>Hi there! I'm Rohan Rai</h2><br>
+                <p>A passionate computer science student with a love for all things tech.</p>
+                <p>I have a strong foundation in programming languages like C++, Java, and</p>
+                <p>I have dived into various areas such as data structures, algorithms, web development.</p>
+                <p>Apart from coding, I'm also interested in Sketching.</p> <br><br>
+                <p> Let's connect and collaborate on some exciting tech projects!</p>
+            </div>
+
         </div>
     </div>
 
@@ -71,47 +81,52 @@
             <div class="edutext left-box " data-aos="fade-up-right">
                 <img src="images/nit.png">
                 <div class="content">
-                    <h2>MCA</h2>
-                    <h4>2022-25</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Itaque est saepe earum molestiae ratione sunt voluptatem
-                        assumenda soluta maxime, perspiciatis quas quibusdam, quis,
-                        voluptas molestias fuga neque natus atque corporis.</p>
+                    <h2>2022-25</h2>
+                    <h3>Master of Computer Application</h3>
+                    <h4>National Institute Of Technology, Warangal</h4>
+                    <p>An MCA student currently pursuing my degree at NIT Warangal,
+                        I have acquired expertise in data structures,
+                        algorithms, database management systems,. Moreover, my proficiency in front-end
+                        and back-end web development and responsive design .</p>
 
                 </div>
             </div>
             <div class="edutext right-box" data-aos="fade-up-left">
                 <img src="images/davv.png">
                 <div class="content">
-                    <h2>MCA</h2>
-                    <h4>2022-25</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Itaque est saepe earum molestiae ratione sunt voluptatem
-                        assumenda soluta maxime, perspiciatis quas quibusdam, quis,
-                        voluptas molestias fuga neque natus atque corporis.</p>
+                    <h2>2019-22</h2>
+                    <h3>Bachelor of Science in Mathematics</h3>
+                    <h4>Devi Ahilya Vishwavidhalaya, Indore</h4>
+                    <p>
+                        proficient in calculus, algebra, differential equations and complex analysis.
+                    </p>
 
                 </div>
             </div>
             <div class="edutext left-box" data-aos="fade-up-right">
                 <img src="images/OIP.jpg">
                 <div class="content">
-                    <h2>MCA</h2>
-                    <h4>2022-25</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Itaque est saepe earum molestiae ratione sunt voluptatem
-                        assumenda soluta maxime, perspiciatis quas quibusdam, quis,
-                        voluptas molestias fuga neque natus atque corporis.</p>
+                    <h2>2018-19</h2>
+                    <h3>HSSC</h3>
+                    <h4>Harda School Of Education</h4>
+                    <p> Higher Secondary education in PCM.
+                        I achieved academic excellence, securing top 1% percentile in boards,
+                        also develop my critical reasoning,effective communication,adaptability, and confidence.
+                    </p>
 
                 </div>
             </div>
             <div class="edutext right-box" data-aos="fade-up-left">
+                <img src="images/OIP.jpg">
                 <div class="content">
-                    <h2>MCA</h2>
-                    <h4>2022-25</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Itaque est saepe earum molestiae ratione sunt voluptatem
-                        assumenda soluta maxime, perspiciatis quas quibusdam, quis,
-                        voluptas molestias fuga neque natus atque corporis.</p>
+                    <h2>2016-17</h2>
+                    <h3>HSC</h3>
+                    <h4>Harda School Of Education</h4>
+                    <p>
+                        Obtaining top grades and ranking among the highest in the class.
+                        Holding leadership positions in school clubs.
+
+                    </p>
 
                 </div>
             </div>
@@ -123,7 +138,8 @@
 
     <!-- ------------------------project------------------------------------ -->
 
-    <div class="proj-box" >
+    <div class="proj-box" id="services">
+        <div class="heading">Services</div>
         <div class="proj-list">
             <div class="proj-content">
                 <img src="images/p1.jpg">
@@ -154,19 +170,63 @@
 
     </div>
 
+    <!-- -----------------------form----------------------------- -->
+
+    <div class="contact-form" id="contact">
+        <div class="form-info">
+            <div class="left-form">
+                <h2 id="blink">
+                    <span style="--i:1">L</span>
+                    <span style="--i:2">e</span>
+                    <span style="--i:3">t</span>
+                    <span style="--i:4">'</span>
+                    <span style="--i:5">s</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span style="--i:6">G</span>
+                    <span style="--i:7">e</span>
+                    <span style="--i:8">t</span><br>
+                    <span style="--i:1">I</span>
+                    <span style="--i:2">n</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span style="--i:3">T</span>
+                    <span style="--i:4">o</span>
+                    <span style="--i:5">u</span>
+                    <span style="--i:6">c</span>
+                    <span style="--i:7">h</span><br>
+                    <span style="--i:0"><i class="fa-solid fa-cloud-arrow-up"></i></span>
+                </h2>
+            </div>
+            <div class="right-form">
+                <form action="https://formspree.io/f/xoqovlgd" method="POST">
+                    <input type="text" placeholder="Name" id="fname" name="username" autocomplete="off" required>
+                    <input type="email" placeholder="Email" id="mail" name="email" autocomplete="off" required>
+                    <input type="text" placeholder="Subject" id="sub" name="subject" autocomplete="off" required>
+                    <textarea id="msg" name="message" cols="30" rows="6" placeholder="Message" required
+                        minlength="5"></textarea><br>
+
+                    <button id="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
 
     <!-- -----------------------contact-------------------------- -->
 
-    <div class="contact-box" id="contact">
+    <div class="contact-box">
         <div class="contact-info">
             <div class="left-div">
-                <a href="mailto:rairohan2309@gmail.com"><i class="fa-solid fa-paper-plane " style="color: white;"></i><span > rairohan2309@gmail.com</span></a>
-                <a href="https://www.linkedin.com/in/rohan-rai-020b25249"><i class="fa-brands fa-linkedin" style="color: white;"></i><span > Rohan_Rai</span></a>
+                <a href="mailto:rairohan2309@gmail.com"><i class="fa-solid fa-paper-plane "
+                        style="color: white;"></i><span> rairohan2309@gmail.com</span></a>
+                <a href="https://www.linkedin.com/in/rohan-rai-020b25249"><i class="fa-brands fa-linkedin"
+                        style="color: white;"></i><span> Rohan_Rai</span></a>
             </div>
             <div class="right-div">
-                <a href="https://github.com/spoileralert23"><i class="fa-brands fa-github" style="color: #64CCC5;"></i><span>@spoileralert23</span></a>
-                <a href="https://www.instagram.com/rohanrai23_/"><i class="fa-brands fa-instagram" style="color: #FF0060;"></i><span>rohanrai23_</span></a>
-                <a href="https://www.facebook.com/profile.php?id=100022112719814"><i class="fa-brands fa-facebook" style="color: #0079FF;"></i><span>rohan rai</span></a>
+                <a href="https://github.com/fomosapien23"><i class="fa-brands fa-github"
+                        style="color: #64CCC5;"></i><span>@fomosapien23</span></a>
+                <a href="https://www.instagram.com/rohanrai23_/"><i class="fa-brands fa-instagram"
+                        style="color: #FF0060;"></i><span>rohanrai23_</span></a>
+                <a href="https://www.facebook.com/profile.php?id=100022112719814"><i class="fa-brands fa-facebook"
+                        style="color: #0079FF;"></i><span>rohan rai</span></a>
                 <a href=""> <i class="fa-brands fa-snapchat" style="color: #F6FA70;"></i><span>rai_rohan23</span></a>
             </div>
         </div>
@@ -186,17 +246,17 @@
 </script>
 
 <script>
-  window.addEventListener('scroll', function() {
-  var navbar = document.querySelector('.topbar');
-  var scrollPosition = window.scrollY;
+    window.addEventListener('scroll', function () {
+        var navbar = document.querySelector('.topbar');
+        var scrollPosition = window.scrollY;
 
-  if (scrollPosition > 1300  ) { 
-    navbar.classList.add('sticky');
-    navbar.classList.add('sticky a');
-  } else {
-    navbar.classList.remove('sticky');
-  }
-});
+        if (scrollPosition > 1300) {
+            navbar.classList.add('sticky');
+            navbar.classList.add('sticky a');
+        } else {
+            navbar.classList.remove('sticky');
+        }
+    });
 
 </script>
 
