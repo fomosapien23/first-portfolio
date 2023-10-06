@@ -120,17 +120,17 @@
     scrollcontainer.addEventListener("wheel", (evt) => {
         evt.preventDefault();
         scrollcontainer.scrollLeft += (evt.deltaY);
-        scrollcontainer.style.scrollBehavior = "smooth";
+        // scrollcontainer.style.scrollBehavior = "smooth";
     })
 
     nextbtn.addEventListener("click", () => {
-        scrollcontainer.scrollLeft += 500;
-        scrollcontainer.style.scrollBehavior = "smooth";
+        scrollcontainer.scrollLeft += 20500;
+        // scrollcontainer.style.scrollBehavior = "smooth";
     })
 
     backbtn.addEventListener("click", () => {
-        scrollcontainer.scrollLeft -= 500;
-        scrollcontainer.style.scrollBehavior = "smooth";
+        scrollcontainer.scrollLeft -= 20500;
+        // scrollcontainer.style.scrollBehavior = "smooth";
     })
 
 </script>

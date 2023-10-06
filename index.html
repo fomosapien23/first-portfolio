@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="edu.css">
 
 </head>
 
@@ -16,13 +17,15 @@
     <div class="topbar">
         r.
         <nav>
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#index">Home</a></li>
                 <li><a href="#about">About me</a></li>
                 <li><a href="#edu">Education</a></li>
                 <li><a href="#contact">Contact me</a></li>
                 <li><a href="#services">Services</a></li>
+                <i class="fa-solid fa-xmark fa-spin-pulse" id="men" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" id="men" onclick="openmenu()"></i>
         </nav>
 
     </div>
@@ -40,16 +43,19 @@
                         <ul>
                             <li><span id="p1">Developer</span></li>
                             <li><span id="p2">Programmer</span></li>
-                            <li><span id="p3">Artist</span></li>
+                            <li><span id="p3">Creator</span></li>
                         </ul>
                     </div>
                 </div>
                 <!-- <span id="talk">Developer, Competitive Programmer </span> -->
-                <a href="resume_rohan.pdf" download="resume_rohan.pdf">
+                <a href="22mcf1r42_Rohan_Rai" download="resume_rohan.pdf" id="resume">
                     <button id="cv">Download Resume</button>
                 </a>
             </div>
-            <div class="devpic"><img src="images/roha.jpg" alt=""></div>
+            <div class="devpic">
+                <img src="images/roha.jpg" alt="">
+               
+            </div>
         </div>
 
 
@@ -75,24 +81,34 @@
     </div>
 
     <!-- -----------------------------Education------------------------------- -->
-    <div class="edu-box" id="edu">
-        <div class="topic">Education</div>
-        <div class="eduinfo">
-            <div class="edutext left-box " data-aos="fade-up-right">
-                <img src="images/nit.png">
-                <div class="content">
-                    <h2>2022-25</h2>
-                    <h3>Master of Computer Application</h3>
-                    <h4>National Institute Of Technology, Warangal</h4>
-                    <p>An MCA student currently pursuing my degree at NIT Warangal,
-                        I have acquired expertise in data structures,
-                        algorithms, database management systems,. Moreover, my proficiency in front-end
-                        and back-end web development and responsive design .</p>
+   
 
+ <div class="edu-box" id="edu">
+
+    <div class="container-edu">
+        <div class="top-section-edu">
+            <h1>Education</h1>
+            
+        </div>
+
+        <div class="timeline">
+            <div class="line"></div>
+            <div class="section-edu">
+                <div class="bead"></div>
+                <div class="content">
+                        <h2>2022-25</h2>
+                        <h3>Master of Computer Application</h3>
+                        <h4>National Institute Of Technology, Warangal</h4>
+                        <p>An MCA student currently pursuing my degree at NIT Warangal,
+                            I have acquired expertise in data structures,
+                            algorithms, database management systems,. Moreover, my proficiency in front-end
+                            and back-end web development and responsive design .</p>
+    
                 </div>
             </div>
-            <div class="edutext right-box" data-aos="fade-up-left">
-                <img src="images/davv.png">
+
+            <div class="section-edu">
+                <div class="bead"></div>
                 <div class="content">
                     <h2>2019-22</h2>
                     <h3>Bachelor of Science in Mathematics</h3>
@@ -100,11 +116,11 @@
                     <p>
                         proficient in calculus, algebra, differential equations and complex analysis.
                     </p>
-
                 </div>
             </div>
-            <div class="edutext left-box" data-aos="fade-up-right">
-                <img src="images/OIP.jpg">
+
+            <div class="section-edu">
+                <div class="bead"></div>
                 <div class="content">
                     <h2>2018-19</h2>
                     <h3>HSSC</h3>
@@ -113,11 +129,11 @@
                         I achieved academic excellence, securing top 1% percentile in boards,
                         also develop my critical reasoning,effective communication,adaptability, and confidence.
                     </p>
-
                 </div>
             </div>
-            <div class="edutext right-box" data-aos="fade-up-left">
-                <img src="images/OIP.jpg">
+
+            <div class="section-edu">
+                <div class="bead"></div>
                 <div class="content">
                     <h2>2016-17</h2>
                     <h3>HSC</h3>
@@ -127,26 +143,24 @@
                         Holding leadership positions in school clubs.
 
                     </p>
-
                 </div>
             </div>
+
+
         </div>
-
     </div>
-    </div>
-    </div>
-
+</div>    
     <!-- ------------------------project------------------------------------ -->
 
     <div class="proj-box" id="services">
-        <div class="heading">Services</div>
+        <!-- <div class="heading">Content</div> -->
         <div class="proj-list">
             <div class="proj-content">
-                <img src="images/p1.jpg">
+                <img src="images/posted.jpeg">
                 <div class="layer">
-                    <h2>Gallery</h2>
-                    <p>some of my artwork, include some of my favourite one's</p>
-                    <a href="gallery.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h2>Skills</h2>
+                    <p>some skills and knowlwdge</p>
+                    <a href="skills.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="proj-content">
@@ -154,21 +168,54 @@
                 <div class="layer">
                     <h2>Project</h2>
                     <p>Development Projects and university projects</p>
-                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="project.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="proj-content">
-                <img src="images/p3.jpg">
+                <img src="images/p1.jpg">
                 <div class="layer">
-                    <h2>Skills</h2>
-                    <p>some skills and knowlwdge</p>
-                    <a href="skills.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h2>Gallery</h2>
+                    <p>some of my artwork, include some of my favourite one's</p>
+                    <a href="gallery1.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
+            
+            
         </div>
 
 
     </div>
+
+    
+        <!-- -----------competitive programming profiles--------- -->
+
+        <div id="profiles">
+            <div class="container">
+                <h1 class="sub-title">Programming Profiles</h1>
+                <div class="profile-links">
+                    <div>
+                        <i class="fa-solid fa-terminal"></i>
+                        <h2>LeetCode</h2>
+                        <a href="https://leetcode.com/Rohan_Rai/" target="_blank">Visit Profile</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-code"></i>
+                        <h2>CodeChef</h2>
+                        <a href="https://www.codechef.com/users/rairohan_23" target="_blank">Visit Profile</a>
+                    </div>
+                    <div>
+                        <i class="fab fa-hackerrank"></i>
+                        <h2>HackerRank</h2>
+                        <a href="https://www.hackerrank.com/rairohannit23" target="_blank">Visit Profile</a>
+                    </div>
+                    <div>
+                        <i class="fab fa-free-code-camp"></i>
+                        <h2>GeeksforGeeks</h2>
+                        <a href="https://auth.geeksforgeeks.org/user/rairohan23_" target="_blank">Visit Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <!-- -----------------------form----------------------------- -->
 
@@ -247,17 +294,52 @@
 
 <script>
     window.addEventListener('scroll', function () {
-        var navbar = document.querySelector('.topbar');
-        var scrollPosition = window.scrollY;
+        // Check the screen width
+        if (window.innerWidth > 800) {
+            var navbar = document.querySelector('.topbar');
+            var scrollPosition = window.scrollY;
 
-        if (scrollPosition > 1300) {
-            navbar.classList.add('sticky');
-            navbar.classList.add('sticky a');
-        } else {
-            navbar.classList.remove('sticky');
+            if (scrollPosition > 1300) {
+                navbar.classList.add('sticky');
+                navbar.classList.add('sticky a');
+            } else {
+                navbar.classList.remove('sticky');
+            }
         }
     });
+</script>
 
+<script>
+    window.addEventListener('scroll', function () {
+        // Check the screen width
+        if (window.innerWidth < 800) {
+            var navbar = document.querySelector('.topbar');
+            var scrollPosition = window.scrollY;
+
+            if (scrollPosition > 1300) {
+                navbar.classList.add('sticky');
+                navbar.classList.add('sticky a');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        }
+    });
+</script>
+
+<script src="timeline.js"></script>
+<script>
+    var sidetab = document.getElementById("sidemenu");
+    // sidetab.style.position="fixed";
+
+    function closemenu() {
+        document.querySelector("body").style.overflowY="visible";
+        sidetab.style.right = "-40%";
+    }
+
+    function openmenu() {
+        document.querySelector("body").style.overflowY="hidden";
+        sidetab.style.right = "0";
+    }
 </script>
 
 </html>

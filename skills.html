@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        body{
+            font-family: 'poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .services{
+            margin: 20px 10%;
+            display: flex;
+            position: relative;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .log-section{
+            margin: 10px;
+            width: 15%;
+            
+            padding: 45px;
+            
+            text-align: center;
+            overflow: auto;
+            /* border-style: outset;
+            border-color: black; */
+            border-radius: 10px;
+            box-shadow: 3px 8px;
+        }
+
+        .log-section:hover{
+            color: white;
+        }
+        
+        #ls1{
+            background-color: #FF9B50;
+        }
+        #ls2{
+            background-color: #45FFCA;
+        }
+        #ls3{
+            background-color: #E9B824;
+        }
+        #ls4{
+            background-color: #B931FC;
+        }
+
+
+
+        .content p{
+            align-items: center;
+        }
+        .logo i{
+            font-size: 45px;
+            align-items: center;
+            text-align: center;
+        }
+        .skill{
+            margin: 0 12%;
+        }
+
+        .skill li{
+            font-weight: 800;
+            font-size: 20px;
+        }
+        h1{
+            margin: 50px 0;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="skill">
+            <h1>Skills</h1>
+
+            <li>Languages</li>
+            <p>C++, C, Java, R programming, PHP, SQL, Javascript </p>
+    
+            <li>Web Technologies</li>
+            <p>HTML5, CSS</p>
+    
+            <li>Tools</li>
+            <p>Git, Github, SQL_Developer</p>
+    
+            <li>Coursework</li>
+            <p>DSA, Database System, OOPs_with_Java</p>
+    
+            <li>Other Skills</li>
+            <p>Problem Solving, Leadership, Teamwork, Communication, Critical Thinking.</p>
+            
+            <h1>Services</h1>
+        </div>
+       
+
+       
+
+        <div class="services">
+            
+            <div class="log-section" id="ls1">
+                <div class="logo"><i class="fa-solid fa-laptop"></i></div>
+                <div class="content">
+                    <p>Problem Solving</p>
+                </div>
+            </div>
+            
+            <div class="log-section" id="ls2">
+                <div class="logo"><i class="fa-solid fa-palette"></i></div>
+                <div class="content">
+                    <p>Web Design</p>
+                </div>
+            </div>
+            
+            <div class="log-section" id="ls3">
+                <div class="logo"><i class="fa-solid fa-mobile-screen"></i></div>
+                <div class="content">
+                    <p>Responsive Design</p>
+                </div>
+            </div>
+            
+            <div class="log-section" id="ls4">
+                <div class="logo"><i class="fa-solid fa-code"></i></div>
+                <div class="content">
+                    <p>Coding</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/50665909d5.js" crossorigin="anonymous"></script>
+</html>
