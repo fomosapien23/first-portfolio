@@ -3,6 +3,10 @@
 
 Welcome to my portfolio website! This repository contains the code and assets for my personal portfolio website, showcasing my projects, skills, and education.
 
+please follow this link to visit
+
+https://fomosapien23.github.io/first-portfolio/
+
 ## About Me
 
 I am a passionate abount Coding and development with a strong background in Computer Science. I enjoy working on diverse projects, tackling challenging problems, and continuously learning and improving my skills.
