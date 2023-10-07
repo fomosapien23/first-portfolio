@@ -5,7 +5,7 @@ Welcome to my portfolio website! This repository contains the code and assets fo
 
 please follow this link to visit
 
-https://fomosapien23.github.io/first-portfolio/
+ https://fomosapien23.github.io/first-portfolio/
 
 ## About Me
 
