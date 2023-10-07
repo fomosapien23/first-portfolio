@@ -238,21 +238,22 @@ nav ul li a:hover {
 /* --------------------------------about ---------------- */
 
 .about_container {
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
   width: 100vw;
   align-items: center;
   justify-content: center;
   /* background-color: #cae962; */
   display: flex;
-  margin: 200px 0;
+  padding: 200px 0;
 }
 
 .about_info {
   /* text-align: center; */
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  margin: 0;
+  width: 100%;
   height: auto;
   padding: 30px 200px;
   background-color: #2b2b2b;
@@ -873,6 +874,21 @@ textarea::placeholder {
 
   /* ---------------education---------------------- */
 
+  .content p{
+    font-size: 13px;
+
+  }
+  .content h4{
+    font-size: 15px;
+  }
+
+  .content h3{
+    font-size: 18px;
+  }
+
+  .content h2{
+    font-size: 22px;
+  }
 
   /* -------------form--------------------- */
 
@@ -932,16 +948,16 @@ textarea::placeholder {
   margin-top: 2px;
   align-items: center;
   justify-content: center;
-  text-align: center;
 
 }
 .left-div a span {
-  font-size: 15px;
+  font-size: 17px;
+  font-weight: 800;
   margin-top: 5px;
 }
 
 .right-div a span {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .left-div,
@@ -954,10 +970,7 @@ textarea::placeholder {
 
 
 /* --------------------project------------ */
-/* .project-content{
-  width: 200px;
 
-} */
 /* ---------cright------------------- */
 
 .cright{

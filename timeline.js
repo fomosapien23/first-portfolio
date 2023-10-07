@@ -1,5 +1,4 @@
- 
-     "use strict";
+"use strict";
 
 function qs(selector, all = false) {
   return all ? document.querySelectorAll(selector) : document.querySelector(selector);
@@ -13,17 +12,14 @@ let prevScrollY = window.scrollY;
 let up, down;
 let full = false;
 let set = 0;
-const targetY = window.innerHeight * .8;
+const targetY = window.innerHeight * 0.8;
 
 function scrollHandler(e) {
-  const {
-    scrollY
-  } = window;
+  const { scrollY } = window;
   up = scrollY < prevScrollY;
   down = !up;
   const timelineRect = timeline.getBoundingClientRect();
-  const lineRect = line.getBoundingClientRect(); // const lineHeight = lineRect.bottom - lineRect.top;
-
+  const lineRect = line.getBoundingClientRect();
   const dist = targetY - timelineRect.top;
   console.log(dist);
 
@@ -38,13 +34,11 @@ function scrollHandler(e) {
   }
 
   sections.forEach(item => {
-    // console.log(item);
-    const rect = item.getBoundingClientRect(); //     console.log(rect);
-
+    const rect = item.getBoundingClientRect();
     if (rect.top + item.offsetHeight / 5 < targetY) {
       item.classList.add('show-me');
     }
-  }); // console.log(up, down);
+  });
 
   prevScrollY = window.scrollY;
 }
@@ -52,3 +46,37 @@ function scrollHandler(e) {
 scrollHandler();
 line.style.display = 'block';
 window.addEventListener('scroll', scrollHandler);
+
+// Refactor code to run animations for both odd and even boxes on small screens
+function runAnimations() {
+  const mediaQuery = window.matchMedia('(max-width: 800px)');
+  const oddSections = document.querySelectorAll('.section-edu:nth-child(odd)');
+  const evenSections = document.querySelectorAll('.section-edu:nth-child(even)');
+
+  function handleMediaQueryChange(mediaQuery) {
+    if (mediaQuery.matches) {
+      // Code for screens smaller than 800px
+      oddSections.forEach(item => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top + item.offsetHeight / 5 < targetY) {
+          item.classList.add('show-me');
+        }
+      });
+      evenSections.forEach(item => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top + item.offsetHeight / 5 < targetY) {
+          item.classList.add('show-me');
+        }
+      });
+    } else {
+      // Code for screens 800px and larger
+      // You can add code for larger screens here if needed
+    }
+  }
+
+  // Initial check and register listener for media query changes
+  handleMediaQueryChange(mediaQuery);
+  mediaQuery.addListener(handleMediaQueryChange);
+}
+
+runAnimations();

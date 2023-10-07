@@ -52,7 +52,7 @@
     bottom: 0;
 }
 
-.section-edu{
+.section-edu {
     display: flex;
     opacity: 0;
     transform: translateX(-100%);
@@ -62,9 +62,8 @@
     margin: 50px 0;
     padding: 1rem;
     align-items: center;
-    min-height: 300px;
-    
-
+    flex-wrap: wrap;
+    font-size: 16px; /* Default font size for screens 800px and larger */
 }
 
 .section-edu:nth-child(odd){
@@ -73,6 +72,7 @@
 }
 
 .bead{
+    flex-wrap: wrap;
     position: absolute;
     display: block;
     height: 1rem;
@@ -88,11 +88,13 @@
     width: calc(50% - 6rem);
     background-color: white;
     color: black;
+    flex-wrap: wrap;
     position: relative;
     padding: 20px 30px;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 5px 5px -1px rgba(0, 0, 0, .12);
     /* padding: 10px; */
     /* text-align: center; */
+    /* overflow: hidden; */
 }
 
 .show-me:nth-child(n){
@@ -108,12 +110,30 @@
 @media screen and (max-width: 800px) {
 
     .line{
-        left: 5%;
+        left: 0%;
     }
 
     .top-section-edu{
-        font-size: 6px;
+        font-size: 18px;
     }
 
+    .section-edu:nth-child(odd){
+        flex-direction:row-reverse;
+        transform: translateX(0%);
+    }
+    .content{
+        width: 100%;
+        overflow: auto;
+    }
+
+    .section-edu {
+        font-size: 14px; /* Font size adjustment for screens less than 800px */
+    }
+    .bead{
+        height: 1rem;
+        width: 1rem;
+        left: 0%;
+        top: 15%;
+    }
 }
 
