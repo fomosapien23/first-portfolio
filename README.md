@@ -25,16 +25,6 @@ I am a passionate abount Coding and development with a strong background in Comp
 
 - HTML, CSS, and JavaScript for building the frontend of the website.
 
-## Deployment
-
-The portfolio website can be deployed in various ways, depending on the chosen setup and technology stack. Some common deployment options include:
-
-- Deploying as a static website using platforms like GitHub Pages, Netlify, or Vercel.
-- Deploying as a server-rendered application on hosting services such as Heroku, AWS, or Azure.
-- Using a custom domain name for the website (if applicable).
-
-Please refer to the documentation of your chosen deployment platform or technology for specific instructions on how to deploy your portfolio website.
-
 ## Customization
 
 Feel free to fork this repository and customize it to create your own portfolio website. You can modify the design, content, and structure to match your personal preferences and showcase your own projects and skills.
